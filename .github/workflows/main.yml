@@ -1,0 +1,24 @@
+name: hello-world
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: set up node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: install package json
+        run: npm install
+
+      - name: Run testing
+        run: |
+          output=$(node dist/Test1.js
+
+          if [ $output -ne 0 ]; then
+            echo "Error: code $output"
+            exit 1
+          fi
