@@ -16,7 +16,7 @@ jobs:
 
       - name: Run testing
         run: |
-          output=$(node dist/Test1.js
+          output=$(node dist/Test1.js)
 
           if [ $output -ne 0 ]; then
             echo "Error: code $output"
