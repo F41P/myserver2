@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.helloWorld = helloWorld;
+exports.add = add;
 function helloWorld() {
     console.log("Hello, World!");
 }
@@ -10,5 +12,3 @@ const Utils = {
     helloWorld,
     add
 };
-module.exports = Utils;
-//# sourceMappingURL=Utils.js.map

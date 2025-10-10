@@ -8,7 +8,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 const Utils = require('./Utils');
 const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
     //test1
@@ -27,4 +26,3 @@ const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 unit_test();
-//# sourceMappingURL=Test1.js.map
